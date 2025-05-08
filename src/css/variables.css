@@ -1,0 +1,12 @@
+:root{
+    /* ### Primary */
+--primary-200 : hsl(148, 38%, 91%);
+--primary-600 : hsl(169, 82%, 27%);
+--error: hsl(0, 66%, 54%);
+
+/* ### Neutral */
+
+--white: hsl(0, 0%, 100%);
+--neutral-500: hsl(186, 15%, 59%);
+--neutral-900: hsl(187, 24%, 22%);
+}
