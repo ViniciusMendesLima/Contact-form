@@ -25,59 +25,58 @@
   
     <h1>Contact Us</h1>
     <form action="">
-      <fieldset>
-        <legend>Personal Information</legend>
+      <fieldset class="personalInformation">
         <ul>
           <li>
-            <label for="firstName">First Name <span>*</span></label>
+            <label class="labelDescription" for="firstName">First Name <span>*</span></label>
             <input type="text" id="firstName" name="firstName" required>
             <span class="error">This field is required</span>
           </li>
           <li>
-            <label for="lastName">Last Name <span>*</span></label>
+            <label class="labelDescription" for="lastName">Last Name <span>*</span></label>
             <input type="text" id="lastName" name="lastName" required>
             <span class="error">This field is required</span>
           </li>
         </ul>
       </fieldset>
   
-      <fieldset>
-        <legend>Contact Details</legend>
+      <fieldset class="contactDetails">
         <ul>
           <li>
-            <label for="emailAddress">Email Address <span>*</span></label>
+            <label class="labelDescription" for="emailAddress">Email Address <span>*</span></label>
             <input type="email" id="emailAddress" name="emailAddress" required>
             <span class="error">Please enter a valid email address</span>
           </li>
         </ul>
       </fieldset>
   
-      <fieldset>
-        <legend>Query Type</legend>
+      <fieldset class="queryType">
         <ul>
           <li>
-            <label><input type="radio" name="queryType" value="general" required> General Enquiry</label>
-            <label><input type="radio" name="queryType" value="support"> Support Request</label>
+            <label class="labelDescription" for="queryType">Query type <span>*</span></label>
+            <div>
+              <label class="option"><input type="radio" name="queryType" value="general" required> General Enquiry</label>
+              <label class="option"><input type="radio" name="queryType" value="support"> Support Request</label>
+            </div>
             <span class="error">Please select a query type</span>
           </li>
         </ul>
       </fieldset>
   
-      <fieldset>
-        <legend>Message</legend>
+      <fieldset class="message">
         <ul>
           <li>
-            <label for="message">Message <span>*</span></label>
+            <label class="labelDescription"  for="message">Message <span>*</span></label>
             <textarea id="message" name="message" required></textarea>
             <span class="error">This field is required</span>
           </li>
         </ul>
       </fieldset>
   
-      <fieldset>
+      <fieldset class="consent">
         <ul>
           <li>
-            <label>
+            <label class="labelDescription" >
               <input type="checkbox" name="consent" required> I consent to being contacted by the team <span>*</span>
             </label>
             <span class="error">To submit this form, please consent to being contacted</span>
@@ -87,12 +86,13 @@
   
       <button type="submit">Submit</button>
     </form>
-  </main>
-  
-  
-  <div class="attribution">
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/ViniciusMendesLima">Vinícius Mendes Lima</a>.
   </div>
+  </main>
+  
+  
+  
 </body>
 </html>
