@@ -1,16 +1,14 @@
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--primary-200);
     display: flex;
     justify-content: center;
+    padding: 20px 0;
     align-items: center;
 }
-
-/* span{
-    display: none;
-} */
-
 main{
+    position: relative;
+    width: 600px;
     background-color: var(--white);
     border-radius: 10px;
     padding: 20px;
@@ -18,8 +16,41 @@ main{
 }
 
 .messageSent{
-    display: none;
+    width: 340px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    background-color: var(--neutral-900);
+    top: -71px;
+    color: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    transition: .2s;
+    opacity: 0;
 }
+
+.messageSent div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.messageSent div h4{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.messageSent img{
+    height: 13px;
+    width: 13px;
+}
+
+.messageSent p{
+    font-size: 12px;
+}
+
+
 
 main h1{
     font-weight: 700;
@@ -113,6 +144,7 @@ main form fieldset ul li input:focus, textarea:focus{
 button{
     height: 35px;
     margin-top: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
     background-color: var(--primary-600);
     color: var(--white);
@@ -125,9 +157,15 @@ button{
 .error{
     font-size: 12px;
     color: var(--error);
+    display: none;
 }
 .focused{
     border: 1px solid var(--primary-600);
     outline: none;
     background-color: var(--primary-200);
 } /*fazer no script*/
+
+.attribution{
+    font-size: 10px;
+    text-align: center;
+}
