@@ -33,7 +33,7 @@
         <ul>
           <li>
             <label class="labelDescription" for="firstName">First Name <span>*</span></label>
-            <input type="text" id="firstName" name="firstName" required>
+            <input  type="text" id="firstName" name="firstName" required>
             <span class="error">This field is required</span>
           </li>
           <li>
@@ -62,7 +62,7 @@
               <label class="option"><input type="radio" name="queryType" value="general" required> General Enquiry</label>
               <label class="option"><input type="radio" name="queryType" value="support"> Support Request</label>
             </div>
-            <span class="error">Please select a query type</span>
+            <span id="queryTypeError" class="error">Please select a query type</span>
           </li>
         </ul>
       </fieldset>
@@ -83,20 +83,18 @@
             <label class="labelDescription" >
               <input type="checkbox" name="consent" required> I consent to being contacted by the team <span>*</span>
             </label>
-            <span class="error">To submit this form, please consent to being contacted</span>
+            <span class="errorConsent error">To submit this form, please consent to being contacted</span>
           </li>
         </ul>
       </fieldset>
   
-      <button type="submit">Submit</button>
+      <button id="btnSend" type="submit">Submit</button>
     </form>
     <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/ViniciusMendesLima">Vinícius Mendes Lima</a>.
   </div>
   </main>
-  
-  
-  
+  <script src="src/js/index.js"></script>
 </body>
 </html>
