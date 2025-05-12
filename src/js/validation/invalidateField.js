@@ -1,7 +1,7 @@
-function invalidateField(input){
-    input.classList.add("invalidField");
+function invalidateField(inputNameLastNameOrEmail){
+    inputNameLastNameOrEmail.classList.add("invalidField");
 
-    const errorElement = input.nextElementSibling ;
+    const errorElement = inputNameLastNameOrEmail.nextElementSibling ;
     if(errorElement){
         errorElement.style.display = "block";
     }

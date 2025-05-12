@@ -4,6 +4,8 @@ import { validateConsent } from "./validation/validateConsent.js";
 import { validateEmail } from "./validation/validateEmail.js";
 import { validateQueryType } from "./validation/validateQueryType.js";
 import { addQueryInputFocus } from "./focus/queryInputFocus.js";
+import { clean } from "./confirmeSend/clean.js";
+import {getMessage} from "./confirmeSend/getMessage.js"
 
 const btnSend = document.getElementById("btnSend");
 const firstName = document.getElementById("firstName");
@@ -38,14 +40,8 @@ btnSend.addEventListener("click", (e) => {
     if (!validateConsent(consent)) isValid = false;
 
     if (isValid) {
-        messageSent.style.opacity = "1";
-        setTimeout(() => {
-            messageSent.style.opacity = "0";
-        }, 3000);
-
-        if (window.innerWidth < 430) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        clean();
+        getMessage(messageSent);
     } else {
         messageSent.style.opacity = "0";
     }
