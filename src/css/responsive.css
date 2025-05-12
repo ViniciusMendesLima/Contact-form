@@ -16,4 +16,7 @@
         flex-direction: column;
     }
 
+    .messageSent{
+        top: -60px;
+    }
 }
