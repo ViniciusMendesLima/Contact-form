@@ -46,6 +46,10 @@ btnSend.addEventListener("click", (e) =>{
 
     if (isValid){
         messageSent.style.opacity = "1";
+
+        setTimeout(()=> {
+            messageSent.style.opacity = "0";
+        }, 3000);
     } else {
         messageSent.style.opacity = "0";
     }
