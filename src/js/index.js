@@ -50,6 +50,10 @@ btnSend.addEventListener("click", (e) =>{
         setTimeout(()=> {
             messageSent.style.opacity = "0";
         }, 3000);
+
+        if (window.innerWidth< 430) {
+            window.scrollTo({top: 0, behavior: 'smooth'})
+        }
     } else {
         messageSent.style.opacity = "0";
     }

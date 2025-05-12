@@ -15,4 +15,8 @@
     .queryType ul li div{
         flex-direction: column;
     }
+
+    .messageSent{
+        opacity: 1;
+    }
 }
