@@ -69,7 +69,7 @@ main form fieldset ul{
 main form fieldset ul li{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 
 .labelDescription{

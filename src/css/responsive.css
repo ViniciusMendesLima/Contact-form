@@ -1,5 +1,18 @@
 @media(max-height: 600px){
+    body{
+        margin: 20px;
+    }
     main{
     margin-top: 5%;
+    }
+}
+
+@media(max-width:430px){
+    main form fieldset ul{
+        flex-direction: column;
+    }
+
+    .queryType ul li div{
+        flex-direction: column;
     }
 }
