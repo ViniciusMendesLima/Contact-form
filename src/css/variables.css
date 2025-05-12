@@ -9,8 +9,6 @@
 /* ### Neutral */
 
 --white: hsl(0, 0%, 100%);
---neutro:hsl(180, 4%, 60%);
---neutral-500: hsl(186, 15%, 59%);
 --neutral-900: hsl(187, 24%, 22%);
-
+--neutral-1000:hsl(171, 83%, 14%)
 }

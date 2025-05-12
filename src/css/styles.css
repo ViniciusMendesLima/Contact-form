@@ -114,6 +114,7 @@ main form fieldset ul li input:focus, textarea:focus{
     width: 100%;
     border-radius: 5px;
     border: 1px solid var(--neutral-900);
+    cursor: pointer;
 }
 
 .queryType ul li div label input[type="radio"], .consent ul li .labelDescription input[type="checkbox"] {
@@ -152,7 +153,19 @@ button{
     font-weight: 700;
     font-size: 12px;
     cursor: pointer;
+    transition: .2s ease-in-out;
 }
+
+button:hover{
+    background-color: var(--neutral-1000);
+}
+
+main form fieldset ul li input:hover,
+.message ul li textarea:hover,
+.queryType ul li div label:hover{
+    border: 1px solid var(--primary-600);
+}
+
 
 .error{
     font-size: 12px;
