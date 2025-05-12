@@ -163,11 +163,11 @@ button{
 .invalidField{
     border: 1px solid var(--error);
 }
-.focused{
+.queryType ul li div .focused{
     border: 1px solid var(--primary-600);
     outline: none;
     background-color: var(--primary-200);
-} /*fazer no script*/
+} 
 
 .attribution{
     font-size: 10px;
