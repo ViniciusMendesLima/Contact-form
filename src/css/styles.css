@@ -87,13 +87,13 @@ main form fieldset ul li input{
     border: 1px solid var(--neutral-900);
     cursor: pointer;
 }
-main form fieldset ul li input:focus, textarea:focus{
+main form fieldset ul li input:focus, 
+textarea:focus,
+.consent ul li .labelDescription input:focus{
     border: 1px solid var(--primary-600);
     outline: none;
 }
-.contactDetails ul li, .message ul li, .consent ul li, button{
-    width: 100%;
-}
+
 .queryType ul li{
     width: 100%;
 }
@@ -142,8 +142,13 @@ main form fieldset ul li input:focus, textarea:focus{
     cursor: pointer;
 }
 
+.consent ul li .labelDescription input[type="checkbox"]:focus{
+    outline: 1px solid var(--primary-600);
+}
+
 button{
     height: 35px;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 5px;
